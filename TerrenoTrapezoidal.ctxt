@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=TerrenoTrapezoidal
+comment1.params=largoMayor\ largoMenor\ ancho\ estrato
+comment1.target=TerrenoTrapezoidal(double,\ double,\ double,\ int)
+comment2.params=largoMayor
+comment2.target=void\ setLargoMayor(double)
+comment3.params=largoMenor
+comment3.target=void\ setLargoMenor(double)
+comment4.params=ancho
+comment4.target=void\ setAncho(double)
+comment5.params=
+comment5.target=double\ getLargoMayor()
+comment6.params=
+comment6.target=double\ getLargoMenor()
+comment7.params=
+comment7.target=double\ getAncho()
+comment8.params=
+comment8.target=double\ calcularArea()
+numComments=9

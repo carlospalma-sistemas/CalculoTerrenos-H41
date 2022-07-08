@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=TerrenoTriangular
+comment1.params=ladoa\ ladob\ ladoc\ estrato
+comment1.target=TerrenoTriangular(double,\ double,\ double,\ int)
+comment2.params=ladoa
+comment2.target=void\ setLadoa(double)
+comment3.params=ladob
+comment3.target=void\ setLadob(double)
+comment4.params=ladoc
+comment4.target=void\ setLadoc(double)
+comment5.params=
+comment5.target=double\ getLadoa()
+comment6.params=
+comment6.target=double\ getLadob()
+comment7.params=
+comment7.target=double\ getLadoc()
+comment8.params=
+comment8.target=double\ calcularArea()
+numComments=9

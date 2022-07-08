@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=TerrenoRectangular
+comment1.params=
+comment1.target=TerrenoRectangular()
+comment2.params=largo\ ancho\ estrato
+comment2.target=TerrenoRectangular(double,\ double,\ int)
+comment3.params=
+comment3.target=double\ getLargo()
+comment4.params=
+comment4.target=double\ getAncho()
+comment5.params=largo
+comment5.target=void\ setLargo(double)
+comment6.params=ancho
+comment6.target=void\ setAncho(double)
+comment7.params=
+comment7.target=double\ calcularArea()
+numComments=8
