@@ -1,5 +1,6 @@
 import javax.swing.JOptionPane;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class Arranque
 {
@@ -7,9 +8,17 @@ public class Arranque
     {
         DecimalFormat formato = new DecimalFormat("#,###.##");
         int opcion;
+        ArrayList<Terreno> listaTerrenos = new ArrayList<Terreno>();
+        
         do
         {
-            opcion = Integer.parseInt(JOptionPane.showInputDialog(null, "Escoja tipo de terreno\n1. Rectangular\n2. Trapezoidal\n3. Triangular\n4. Salir"));
+            String mensajeMenu = "MENU PRINCIPAL \n"+
+                                 "1. Ingresar Terreno Rectangular\n"+
+                                 "2. Ingresar Terreno Trapezoidal\n"+
+                                 "3. Ingresar Terreno Triangular\n"+
+                                 "4. Mostrar cantidad de terrenos\n"+
+                                 "0. Salir";
+            opcion = Integer.parseInt(JOptionPane.showInputDialog(null, mensajeMenu));
             double ancho;
             int estrato;
             Terreno t;
@@ -21,6 +30,7 @@ public class Arranque
                     estrato  = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese estrato del terreno rectangular"));
                     t = new TerrenoRectangular(largo, ancho, estrato);
                     JOptionPane.showMessageDialog(null, "El área del terreno rectangular es: "+t.calcularArea()+ "\nEl valor del terreno rectangular es: $"+formato.format(t.calcularValorTotal()));
+                    listaTerrenos.add(t);
                     break;
                     
                 case 2:
@@ -30,6 +40,7 @@ public class Arranque
                     estrato  = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese estrato del terreno trapezoidal"));
                     t = new TerrenoTrapezoidal(largoMayor, largoMenor, ancho, estrato);
                     JOptionPane.showMessageDialog(null, "El área del terreno trapezoidal es: "+t.calcularArea()+ "\nEl valor del terreno trapezoidal es: $"+formato.format(t.calcularValorTotal()));
+                    listaTerrenos.add(t);
                     break;
                     
                 case 3:
@@ -39,9 +50,13 @@ public class Arranque
                     estrato  = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese estrato del terreno triangular"));
                     t = new TerrenoTriangular(ladoa, ladob, ladoc, estrato);
                     JOptionPane.showMessageDialog(null, "El área del terreno triangular es: "+t.calcularArea()+ "\nEl valor del terreno triangular es: $"+formato.format(t.calcularValorTotal()));
+                    listaTerrenos.add(t);
                     break;
-                    
+                
                 case 4:
+                    JOptionPane.showMessageDialog(null, "Cantidad de terrenos ingresados: "+listaTerrenos.size());
+                    
+                case 0:
                     JOptionPane.showMessageDialog(null, "Gracias");  
                     break;
                     
